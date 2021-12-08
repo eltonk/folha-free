@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+  "name": "Folha de São Paulo - Free Reading",
+  "description": "Remove os blocos de assinatura da Folha, permitindo leitura do conteúdo",
+  "author": "elton",
+  "version": "0.0.1",
+  "permissions": ["activeTab"],
+  "icons": {
+    "16": "icons/icon-16.png",
+    "48": "icons/icon-48.png",
+    "128": "icons/icon-128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.folha.uol.com.br/*"],
+      "use_dynamic_url": true,
+      "js": ["inject.js"],
+      "all_frames": true
+    }
+  ],
+  "web_accessible_resources": ["app.js"]
+}
