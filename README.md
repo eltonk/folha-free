@@ -1,5 +1,5 @@
 # folha-free
-Remove os blocos de assinatura da Folha, permitindo leitura do conteúdo
+Remove os blocos de assinatura da Folha e o Globo, permitindo leitura do conteúdo
 
 Extensão para Browser Chrome. Para installar, siga os seguintes passos:
 
